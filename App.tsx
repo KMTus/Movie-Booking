@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import CustomIcon from './src/components/CustomIcon';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -71,7 +72,12 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
+          
         <Header />
+
+        <CustomIcon name='search' size={50}/>
+
+
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
