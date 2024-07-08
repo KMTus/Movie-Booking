@@ -24,7 +24,7 @@ const SearchScreen = ({navigation}: any) => {
       let json = await response.json();
       setSearchList(json.results);
     } catch (err) {
-      console.error('search loi ');
+      console.error('search loi ' , err);
     }
   };
   return (
@@ -35,7 +35,8 @@ const SearchScreen = ({navigation}: any) => {
           data={searchList}
           keyExtractor={(item: any) => item.id}
           // horizontal
-          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator = {false}
+          
           bounces={false}
           numColumns={2}
           ListHeaderComponent={
