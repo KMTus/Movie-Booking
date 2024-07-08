@@ -144,7 +144,7 @@ const MovieDetailsScreen = ({ navigation, route }: any) => {
         </View>
         <Text style={styles.tagline}>{movieData?.tagline}</Text>
       </View>
-
+            
       <View style={styles.infoContainer}>
         <View style={styles.rateContainer}>
           <CustomIcon name="star" style={styles.starIcon} />
@@ -181,6 +181,7 @@ const MovieDetailsScreen = ({ navigation, route }: any) => {
             />
           )}
         />
+
 
         <View>
           <TouchableOpacity
